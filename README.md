@@ -1,5 +1,9 @@
 # Mixed Messages JavaScript Portfolio Project
 
+## Description:
+
+Randomly generates a chopper of the day.
+
 ### Project goals:
 
 * Build a message generator program using JavaScript.
