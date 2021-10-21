@@ -10,7 +10,7 @@ const motorcycle = {
     engines: ['Knuckle Head', 'Pan Head', 'Shovel Head', 'Iron head', 'Pre-Unit'],
     frontEndLength: ['stock', 'extended'],
     frontEnd: ['forks', 'springer', 'girder'],
-    bars: ['drag', 'apes', 'pull-back', 'Z', '6-bend'],
+    bars: ['drag', 'ape', 'pull-back', 'Z', '6-bend'],
     frontBreak: ['no front break', 'a front break'],
 
     getRandomFrame() {
@@ -45,7 +45,7 @@ const motorcycle = {
 };
 
 let randomMotorcycle = () => {
-    let motorcycleString = `Today you are going to ride a ${motorcycle.getRandomFrame()} frame ${motorcycle.getRandomEngine()}, with a ${motorcycle.getRandomFrontEndLength()} ${motorcycle.getRandomFrontEnd()}, ${motorcycle.getRandomBars()} bars, and ${motorcycle.getRandomFrontBreak()}. Good luck!`;
+    let motorcycleString = `Today you are going to ride a ${motorcycle.getRandomFrame()} ${motorcycle.getRandomEngine()}, with ${motorcycle.getRandomFrontEndLength()} ${motorcycle.getRandomFrontEnd()}, ${motorcycle.getRandomBars()} bars, and ${motorcycle.getRandomFrontBreak()}. Good luck!`;
     return motorcycleString;
 };
 
