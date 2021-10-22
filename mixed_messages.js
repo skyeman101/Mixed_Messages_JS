@@ -6,9 +6,9 @@ const randNum = (num) => {
 
 //Class containing motorcycle parts and methods to get random parts.
 const motorcycle = {
-    frames: ['rigid', 'swing-arm', 'digger', 'plunger'],
+    frames: ['a rigid', 'a swing-arm', 'a digger', 'a plunger'],
     engines: ['Knuckle Head', 'Pan Head', 'Shovel Head', 'Iron head', 'Pre-Unit'],
-    frontEndLength: ['stock', 'extended'],
+    frontEndLength: ['a stock', 'a extended'],
     frontEnd: ['forks', 'springer', 'girder'],
     bars: ['drag', 'ape', 'pull-back', 'Z', '6-bend'],
     frontBreak: ['no front break', 'a front break'],
@@ -45,7 +45,7 @@ const motorcycle = {
 };
 
 let randomMotorcycle = () => {
-    let motorcycleString = `Today you are going to ride a ${motorcycle.getRandomFrame()} ${motorcycle.getRandomEngine()}, with ${motorcycle.getRandomFrontEndLength()} ${motorcycle.getRandomFrontEnd()}, ${motorcycle.getRandomBars()} bars, and ${motorcycle.getRandomFrontBreak()}. Good luck!`;
+    let motorcycleString = `Today you are going to ride ${motorcycle.getRandomFrame()} ${motorcycle.getRandomEngine()}, with ${motorcycle.getRandomFrontEndLength()} ${motorcycle.getRandomFrontEnd()}, ${motorcycle.getRandomBars()} bars, and ${motorcycle.getRandomFrontBreak()}. Good luck!`;
     return motorcycleString;
 };
 
